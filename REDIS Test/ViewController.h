@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTRedisObject.h"
+@interface ViewController : UIViewController<LoggerProtocol>
+@property (weak, nonatomic) IBOutlet UITextView *textOutPutView;
 
-@interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *pushData;
+@property (weak, nonatomic) IBOutlet UIButton *retrieveData;
+@property (weak, nonatomic) IBOutlet UITextField *nameText;
+@property (weak, nonatomic) IBOutlet UITextField *designationText;
+@property (weak, nonatomic) IBOutlet UIButton *clearButton;
 
 @end
 
